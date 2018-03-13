@@ -1,4 +1,4 @@
-"""Serve Keras ResNet50 model trained on ImageNet.
+"""Serve Keras DenseNet121 model trained on ImageNet.
 
 Prediction endpoint, served at `/predictions` takes a URL pointing to an image
 and returns a list of class probabilities.
@@ -6,21 +6,21 @@ and returns a list of class probabilities.
 from serveit.server import ModelServer
 from serveit.utils import make_serializable, get_bytes_to_image_callback
 
-from keras.applications.resnet50 import ResNet50
-from keras.applications.resnet50 import decode_predictions
-from keras.applications.resnet50 import preprocess_input
+from keras.applications.densenet import DenseNet121
+from keras.applications.densenet import decode_predictions
+from keras.applications.densenet import preprocess_input
 
 from flask import request
 import requests
 
-# load Resnet50 model pretrained on ImageNet
-model = ResNet50(weights='imagenet')
+# load DenseNet121 model pretrained on ImageNet
+model = DenseNet121(weights='imagenet')
 
 
 # define a loader callback for the API to fetch the relevant data and
 # convert to a format expected by the prediction function
 def loader():
-    """Load image from URL, and preprocess for Resnet."""
+    """Load image from URL, and preprocess for densenet."""
     url = request.args.get('url')  # read image URL as a request URL param
     response = requests.get(url)  # make request to static image file
     return response.content
