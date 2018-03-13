@@ -1,0 +1,14 @@
+Flask==0.11.1
+scikit-learn==0.19.1
+scipy==1.0.0
+Flask-RESTful==0.3.6
+gunicorn==19.7.1
+tensorflow==1.5.0
+Keras==2.1.4
+meinheld==0.6.1
+codacy-coverage==1.3.10
+coverage==4.5.1
+h5py==2.7.1
+Pillow==5.0.0
+numpy==1.14.2
+serveit==0.0.5
