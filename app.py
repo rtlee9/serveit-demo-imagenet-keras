@@ -14,7 +14,7 @@ from flask import request
 import requests
 
 # load DenseNet121 model pretrained on ImageNet
-model = DenseNet121(weights='imagenet')
+model = DenseNet121(weights='densenet121_weights_tf_dim_ordering_tf_kernels.h5')
 
 
 # define a loader callback for the API to fetch the relevant data and
