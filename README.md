@@ -16,3 +16,7 @@ curl -XPOST https://imagenet-keras.ryanlee.io/predictions?url=https://images.pex
 curl -XPOST https://imagenet-keras.ryanlee.io/predictions?url=https://images.pexels.com/photos/67807/plane-aircraft-take-off-sky-67807.jpeg
 # [[["n02690373", "airliner", 0.60765], ["n04592741", "wing", 0.22114], ["n04552348", "warplane", 0.14071], ...]]
 ```
+
+Please consider buying me a coffee to help cover hosting costs:
+
+<a href="https://www.buymeacoffee.com/6Ii7vzL" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
