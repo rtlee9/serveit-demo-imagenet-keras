@@ -18,7 +18,7 @@ model = DenseNet121(weights='densenet121_weights_tf_dim_ordering_tf_kernels.h5')
 
 
 # define a loader callback for the API to fetch the relevant data and
-# convert to a format expected by the prediction function
+# preprocessor callbacks to map to a format expected by the model
 def loader():
     """Load image from URL, and preprocess for densenet."""
     url = request.args.get('url')  # read image URL as a request URL param
