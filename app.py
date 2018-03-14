@@ -39,3 +39,6 @@ server = ModelServer(
 
 # get flask app for gunicorn serving
 app = server.get_app()
+
+if __name__ == '__main__':
+    server.serve()
