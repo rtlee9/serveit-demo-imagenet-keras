@@ -1,7 +1,7 @@
 # Live ServeIt demo
 ## ImageNet classifier API with Keras pretrained model
 
-[ServeIt](https://github.com/rtlee9/serveit) lets you easily serve model predictions and supplementary information from a RESTful API. This repository illustrates this process by deploying a pretrained ImageNet classifier to an API endpoint. The classifier accepts an image URL as a URL argument in a GET request and responds with the top 3 predicted classes for that image.
+[ServeIt](https://github.com/rtlee9/serveit) lets you easily serve model predictions and supplementary information from a RESTful API. This repository illustrates this process by deploying a pretrained ImageNet classifier to an API endpoint. The classifier accepts an image URL as a URL argument in a POST request and responds with the top 3 predicted classes for that image.
 
 Give it a try!
 
