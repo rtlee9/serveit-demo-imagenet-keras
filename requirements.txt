@@ -11,4 +11,4 @@ coverage==4.5.1
 h5py==2.7.1
 Pillow==5.0.0
 numpy==1.14.2
-serveit==0.0.6
+serveit==0.0.7
